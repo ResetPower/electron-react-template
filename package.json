@@ -1,0 +1,54 @@
+{
+  "name": "electron-react-template",
+  "version": "1.0.0",
+  "description": "Simple Electron React Template",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack/dev-renderer.js",
+    "start": "webpack --config webpack/dev-main.js && electron .",
+    "pack": "webpack --config webpack/prod.js && electron-builder"
+  },
+  "build": {
+    "productName": "Epherome",
+    "appId": "com.epherome",
+    "copyright": "Copyright (c) 2021 ResetPower. All rights reserved.",
+    "compression": "store",
+    "directories": {
+      "output": "package"
+    },
+    "asar": false,
+    "icon": "assets/icon.png",
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "dist/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ResetPower/electron-react-template.git"
+  },
+  "homepage": "https://github.com/ResetPower/electron-react-template#readme",
+  "author": "ResetPower",
+  "devDependencies": {
+    "@types/node": "^14.14.43",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "electron": "^12.0.6",
+    "electron-builder": "^22.10.5",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^9.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
