@@ -15,6 +15,9 @@ module.exports = {
         loader: "ts-loader",
       },
     ],
+    resolve: {
+      extensions: [".js", ".ts"],
+    },
   },
   output: {
     path: path.join(__dirname, "../dist"),

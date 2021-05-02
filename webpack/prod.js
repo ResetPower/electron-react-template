@@ -19,6 +19,9 @@ module.exports = [
         },
       ],
     },
+    resolve: {
+      extensions: [".js", ".ts"],
+    },
     output: {
       path: path.join(__dirname, "../dist"),
       filename: "main.js",
