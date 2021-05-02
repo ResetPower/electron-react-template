@@ -9,8 +9,8 @@
     "pack": "webpack --config webpack/prod.js && electron-builder"
   },
   "build": {
-    "productName": "Epherome",
-    "appId": "com.epherome",
+    "productName": "Electron React Template",
+    "appId": "me.resetpower",
     "copyright": "Copyright (c) 2021 ResetPower. All rights reserved.",
     "compression": "store",
     "directories": {
@@ -22,7 +22,8 @@
       "target": "portable"
     },
     "files": [
-      "dist/"
+      "dist/",
+      "!node_modules/"
     ]
   },
   "repository": {
